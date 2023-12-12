@@ -1,9 +1,10 @@
 function displayPoem(response) {
-  alert("poem generated");
+  //   alert("Poem generated!");
   new Typewriter("#poem-box", {
     strings: response.data.answer,
     autoStart: true,
     delay: 10,
+    cursor: "",
   });
 }
 
