@@ -1,5 +1,4 @@
 function displayPoem(response) {
-  //   alert("Poem generated!");
   new Typewriter("#poem-box", {
     strings: response.data.answer,
     autoStart: true,
