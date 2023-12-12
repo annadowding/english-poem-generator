@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>English Poem Generator</title>
   </head>
   <body>
@@ -13,24 +15,19 @@
 
     <div class="container">
       <main>
-        <form action="/submit.php">
+        <form id="submit-form">
           <input
             type="text"
-            value="Type a word"
+            placeholder="Type a word"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-entry-word"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          The wrinkled sea beneath him crawls;
-          <br />
-          He watches from his mountain walls,
-          <br />
-          And like a thunderbolt he falls.
-        </div>
+        <div class="poem" id="poem-box"></div>
       </main>
       <footer>
         This AI project was coded by
