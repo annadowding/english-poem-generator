@@ -1,6 +1,7 @@
 body {
   background-color: #f9f7fe;
   font-family: Helvetica, Arial, sans-serif;
+  font-family: "Afacad", sans-serif;
 }
 
 a {
@@ -25,15 +26,12 @@ h1 {
 }
 
 form {
-  padding: 30px;
-  background-color: white;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
   display: flex;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .instructions {
+  font-family: "Afacad", sans-serif;
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
   width: 80%;
@@ -44,6 +42,7 @@ form {
 }
 
 .submit-button {
+  font-family: "Afacad", sans-serif;
   margin-left: 10px;
   background: #885df1;
   color: white;
@@ -63,8 +62,39 @@ form {
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
+.form-container {
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+.hint {
+  padding: 10px 0 0 0;
+  color: black rgba (black, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+strong {
+  color: blueviolet;
 }

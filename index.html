@@ -4,30 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>English Poem Generator</title>
   </head>
   <body>
     <header>
-      <h1>AI Poem Generator</h1>
+      <h1>AI English Poem Generator</h1>
     </header>
 
     <div class="container">
       <main>
-        <form id="submit-form">
-          <input
-            type="text"
-            placeholder="Type a word"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-entry-word"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem-box"></div>
+        <div class="form-container">
+          <form id="submit-form">
+            <input
+              type="text"
+              placeholder="Enter a poem topic of your choice..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-entry-word"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e. castle, Robin Hood, island</div>
+        </div>
+        <div class="poem hidden" id="poem-box"></div>
       </main>
       <footer>
         This AI project was coded by
